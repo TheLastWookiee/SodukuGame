@@ -10,9 +10,42 @@ public class Main {
 Soduku.display();
     System.out.println("Continue playing(Y/N)?");
         String userInput = in.nextLine();
+
         if(userInput.equals("N")){
             System.exit(0);
-        } else if(userInput.equals("Y")){
+        } else if(userInput.equals("Y")) {
+            getInput(in);
+        }
+
+        private static void getInput(Scanner in){
+            boolean valid = false;
+
+            while (valid = false) {
+                System.out.println("Enter Row:");
+                int row = Integer.parseInt(in.nextLine());
+                System.out.println("Enter Column:");
+                int col = Integer.parseInt(in.nextLine());
+                System.out.println("Enter Value:");
+                int val = Integer.parseInt(in.nextLine());
+                if (!Soduku.isValueValid(row) || !Soduku.isValueValid(col) || !Soduku.isValueValid(val)) {
+                System.out.println("Invalid Input");
+                    System.out.println("Continue playing(Y/N)?");
+                    ;
+
+                    if(userInput.equals("N")){
+                        System.exit(0);
+                    } else if(userInput.equals("Y")) {
+                        valid = false;
+                    }
+                }else{break;}
+
+            }
+        }
+
+
+
+
+
         int row, column, value;
         while(1!=0){
         System.out.println("Enter Row:");
@@ -52,5 +85,5 @@ Soduku.display();
             Operations.InvalidInput();
         }}
     }
-    }
+
 }
