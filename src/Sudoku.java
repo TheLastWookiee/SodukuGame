@@ -1,8 +1,9 @@
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Soduku {
+public class Sudoku {
+
+
     static int[][] sudokuBoard = {
             {5, 3, 4, 0, 7, 8, 9, 1, 2},
             {6, 7, 0, 1, 9, 5, 3, 4, 8},
@@ -14,6 +15,11 @@ public class Soduku {
             {2, 8, 7, 4, 1, 9, 6, 0, 5},
             {3, 4, 5, 2, 8, 6, 1, 7, 9}
     };
+    //board generator borrowed from geeksforgeeks
+
+
+
+
 //Original
     /*{5, 3, 4, 0, 7, 8, 9, 1, 2},
             {6, 7, 0, 1, 9, 5, 3, 4, 8},
