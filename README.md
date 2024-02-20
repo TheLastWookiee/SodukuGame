@@ -1,3 +1,3 @@
-/**
- * A soduku game programmed in Java by Caiden Henn
- */
+
+  A soduku game programmed in Java by Caiden Henn
+
